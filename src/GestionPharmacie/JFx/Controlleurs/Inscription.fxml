@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="516.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionPharmacie.JFx.Controlleurs.ControlInscription">
+   <children>
+      <Label layoutX="48.0" layoutY="41.0" prefHeight="26.0" prefWidth="150.0" text="Nom :" />
+      <Label layoutX="48.0" layoutY="108.0" prefHeight="26.0" prefWidth="61.0" text="Mail :" translateY="150.0" />
+      <Label layoutX="389.0" layoutY="67.0" prefHeight="26.0" prefWidth="150.0" text="Telephone :" translateY="50.0" />
+      <Label layoutX="399.0" layoutY="106.0" prefHeight="26.0" prefWidth="150.0" text="Password :" translateY="150.0" />
+      <Label layoutX="48.0" layoutY="67.0" prefHeight="26.0" prefWidth="150.0" text="Prenom :" translateY="50.0" />
+      <Label layoutX="389.0" layoutY="42.0" prefHeight="26.0" prefWidth="150.0" text="ID :" />
+      <TextField fx:id="nom" layoutX="199.0" layoutY="42.0" prefHeight="26.0" prefWidth="162.0" />
+      <TextField fx:id="prenom" layoutX="199.0" layoutY="117.0" prefHeight="26.0" prefWidth="162.0" />
+      <ComboBox fx:id="fonction" layoutX="48.0" layoutY="192.0" prefHeight="29.0" prefWidth="183.0" promptText="Fonction" />
+      <ComboBox fx:id="genre" layoutX="534.0" layoutY="192.0" prefHeight="30.0" prefWidth="162.0" promptText="Genre" />
+      <TextField fx:id="id" layoutX="530.0" layoutY="41.0" prefHeight="26.0" prefWidth="162.0" />
+      <TextField fx:id="telephone" layoutX="530.0" layoutY="117.0" prefHeight="26.0" prefWidth="162.0" />
+      <PasswordField fx:id="password" layoutX="530.0" layoutY="256.0" prefHeight="26.0" prefWidth="162.0" />
+      <TextField fx:id="mail" layoutX="110.0" layoutY="258.0" prefHeight="26.0" prefWidth="273.0" />
+      <Label layoutX="48.0" layoutY="349.0" prefHeight="26.0" prefWidth="132.0" text="Adresse :" />
+      <TextField fx:id="adresse" layoutX="180.0" layoutY="349.0" prefHeight="26.0" prefWidth="510.0" />
+      <Button fx:id="save" layoutX="597.0" layoutY="460.0" mnemonicParsing="false" onAction="#save" prefHeight="30.0" prefWidth="132.0" style="-fx-background-color: A1DC24;" text="Enregistrer" />
+      <Button fx:id="supprimer" layoutX="449.0" layoutY="460.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="30.0" prefWidth="132.0" style="-fx-background-color: E5645F;" text="Supprimer" />
+      <DatePicker fx:id="date_N" layoutX="299.0" layoutY="191.0" prefHeight="30.0" prefWidth="179.0" promptText="Date de Naissance" />
+   </children>
+</AnchorPane>

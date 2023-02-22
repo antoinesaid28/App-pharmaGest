@@ -1,0 +1,49 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Intellij\\jdbc\\postgresql-42.5.0.jar",
+			"c:\\Program Files (x86)\\Java\\openjfx-19_windows-x64_bin-sdk\\javafx-sdk-19\\lib\\javafx.base.jar",
+			"c:\\Program Files (x86)\\Java\\openjfx-19_windows-x64_bin-sdk\\javafx-sdk-19\\lib\\javafx.controls.jar",
+			"c:\\Program Files (x86)\\Java\\openjfx-19_windows-x64_bin-sdk\\javafx-sdk-19\\lib\\javafx.fxml.jar",
+			"c:\\Program Files (x86)\\Java\\openjfx-19_windows-x64_bin-sdk\\javafx-sdk-19\\lib\\javafx.graphics.jar",
+			"c:\\Program Files (x86)\\Java\\openjfx-19_windows-x64_bin-sdk\\javafx-sdk-19\\lib\\javafx.media.jar",
+			"c:\\Program Files (x86)\\Java\\openjfx-19_windows-x64_bin-sdk\\javafx-sdk-19\\lib\\javafx.swing.jar",
+			"c:\\Program Files (x86)\\Java\\openjfx-19_windows-x64_bin-sdk\\javafx-sdk-19\\lib\\javafx.web.jar",
+			"c:\\Program Files (x86)\\Java\\openjfx-19_windows-x64_bin-sdk\\javafx-sdk-19\\lib\\javafx-swt.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\charm-glisten-6.1.0.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\jfxtras-controls-0.5.1.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\JFoenix-master\\jfoenix-9.0.10.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\controlsfx-11.1.2.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\Formsfx\\javafx-controls-17.0.1.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\Formsfx\\javafx-controls-17.0.1-linux.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\Formsfx\\javafx-fxml-17.0.1.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\Formsfx\\javafx-fxml-17.0.1-linux.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\Formsfx\\javafx-graphics-17.0.1.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\Formsfx\\javafx-graphics-17.0.1-linux.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\Formsfx\\formsfx-core-11.5.0.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\Formsfx\\javafx-base-17.0.1.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\Formsfx\\javafx-base-17.0.1-linux.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\materialfx\\materialfx-11.13.5.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\materialfx\\virtualizedfx-11.2.6.1.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\materialfx\\adapter-0.2.0.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\MaterialFx- MFX Tiled Pane\\materialfx-11.14.0-EA3.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\MaterialFx- MFX Tiled Pane\\virtualizedfx-11.2.6.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\jar_files\\jfxtras-controls-17-r1.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\jar_files\\jfxtras-fxml-17-r1.jar",
+			"c:\\Users\\El Nadje\\OneDrive\\Documents\\BTS SIO\\2eme\\Back\\WorkSpace\\jars\\Jar\\jar_files\\jfxtras-common-17-r1.jar"
+		],
+		"java.completion.filteredTypes": [
+			"com.sun.*",
+			"sun.*",
+			"jdk.*",
+			"org.graalvm.*",
+			"io.micrometer.shaded.*"
+		]
+	}
+}

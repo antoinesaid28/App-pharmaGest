@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import com.dlsc.formsfx.view.controls.SimpleDateControl?>
+<?import com.gluonhq.charm.glisten.control.BottomNavigationButton?>
+<?import com.gluonhq.charm.glisten.mvc.View?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXToggleNode?>
+<?import com.jfoenix.controls.JFXTogglePane?>
+<?import io.github.palexdev.materialfx.controls.MFXRectangleToggleNode?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXTitledPane?>
+<?import io.github.palexdev.materialfx.controls.MFXTreeView?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<?import jfxtras.scene.control.ImageViewButton?>
+<?import jfxtras.scene.layout.HBox?>
+<?import jfxtras.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionPharmacie.JFx.Controlleurs.ControllerDashboard">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <MFXTextField fx:id="searchBar" floatingText="Rechercher..." layoutX="275.0" layoutY="16.0" prefHeight="50.0" prefWidth="441.0" selectable="false" />
+            <ImageView fitHeight="32.0" fitWidth="27.0" layoutX="681.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/loupe.png" />
+               </image>
+            </ImageView>
+            <MFXTitledPane headerPos="BOTTOM" layoutX="852.0" layoutY="25.0" prefHeight="42.0" prefWidth="98.0" title="Langue" />
+            <MFXTreeView layoutX="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="84.0" prefWidth="261.0">
+               <content>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="255.0" style="-fx-background-color: #1D242E;">
+                     <children>
+                        <ImageView fitHeight="92.0" fitWidth="98.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/Coeur%20.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </content>
+            </MFXTreeView>
+            <BorderPane layoutY="81.0" prefHeight="692.0" prefWidth="1280.0" style="-fx-background-color: Gray;" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="81.0">
+               <left>
+                  <VBox prefHeight="691.0" prefWidth="256.0" style="-fx-background-color: #283342;" BorderPane.alignment="CENTER">
+                     <children>
+                        <FlowPane prefHeight="812.0" prefWidth="256.0">
+                           <children>
+                              <Group>
+                                 <children>
+                                    <JFXTogglePane prefHeight="136.0" prefWidth="256.0" style="-fx-margin-left: 5px;">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="127.0" prefWidth="256.0">
+                                             <children>
+                                                <View prefHeight="339.0" prefWidth="223.0">
+                                                   <left>
+                                                      <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                         <image>
+                                                            <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/Rectangle%207.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </left>
+                                                   <right>
+                                                      <BottomNavigationButton alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" prefHeight="26.0" prefWidth="9.0" style="-fx-background-color: #283342;" textAlignment="CENTER" wrapText="true" BorderPane.alignment="CENTER">
+                                                         <contextMenu>
+                                                            <ContextMenu>
+                                                              <items>
+                                                                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                                                              </items>
+                                                            </ContextMenu>
+                                                         </contextMenu>
+                                                         <font>
+                                                            <Font size="1.0" />
+                                                         </font>
+                                                         <graphic>
+                                                            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="●●●" textAlignment="CENTER" wrappingWidth="1.599975347518921">
+                                                               <font>
+                                                                  <Font name="System Bold" size="6.0" />
+                                                               </font>
+                                                            </Text>
+                                                         </graphic>
+                                                      </BottomNavigationButton>
+                                                   </right>
+                                                   <center>
+                                                      <AnchorPane style="-fx-padding: 10px 10px 10px 10px 10px;" BorderPane.alignment="CENTER">
+                                                         <children>
+                                                            <Text fill="WHITE" layoutX="15.0" layoutY="65.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="5.0" text="S. El Nadje">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Text fill="#fed600" layoutX="15.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Super Admin" wrappingWidth="104.27009129524231">
+                                                               <font>
+                                                                  <Font name="Montserrat Regular" size="11.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Circle disable="true" fill="#2ed47a" layoutY="78.0" radius="6.0" stroke="#273240" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="2.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </center>
+                                                </View>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </JFXTogglePane>
+                                 </children>
+                              </Group>
+                              <VBox alignment="CENTER" prefHeight="534.0" prefWidth="256.0">
+                                 <children>
+                                    <FlowPane columnHalignment="CENTER" prefHeight="194.0" prefWidth="256.0">
+                                       <children>
+                                          <JFXToggleNode contentDisplay="CENTER" prefHeight="46.0" prefWidth="256.0" textFill="WHITE">
+                                             <graphic>
+                                                <ToggleButton alignment="CENTER_LEFT" mnemonicParsing="false" prefHeight="60.0" prefWidth="240.0" selected="true" style="-fx-background-color: 0000;" text="Dashboard" textFill="WHITE">
+                                                   <graphic>
+                                                      <ImageViewButton fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/DVector.png" />
+                                                         </image>
+                                                      </ImageViewButton>
+                                                   </graphic>
+                                                   <font>
+                                                      <Font name="Montserrat Regular" size="15.0" />
+                                                   </font>
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="btnLateral" />
+                                                   </toggleGroup>
+                                                </ToggleButton>
+                                             </graphic>
+                                          </JFXToggleNode>
+                                          <JFXToggleNode contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="256.0" textFill="WHITE">
+                                             <graphic>
+                                                <ToggleButton alignment="CENTER_LEFT" mnemonicParsing="false" prefHeight="60.0" prefWidth="240.0" selected="true" style="-fx-background-color: 0000;" text="Inventaire" textFill="WHITE" toggleGroup="$btnLateral">
+                                                   <graphic>
+                                                      <ImageViewButton fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/inventaire.png" />
+                                                         </image>
+                                                      </ImageViewButton>
+                                                   </graphic>
+                                                   <font>
+                                                      <Font name="Montserrat Regular" size="15.0" />
+                                                   </font>
+                                                </ToggleButton>
+                                             </graphic>
+                                          </JFXToggleNode>
+                                          <JFXToggleNode contentDisplay="CENTER" layoutX="10.0" layoutY="56.0" prefHeight="46.0" prefWidth="256.0" textFill="WHITE">
+                                             <graphic>
+                                                <ToggleButton alignment="CENTER_LEFT" mnemonicParsing="false" prefHeight="60.0" prefWidth="240.0" selected="true" style="-fx-background-color: 0000;" text="Rapport" textFill="WHITE" toggleGroup="$btnLateral">
+                                                   <graphic>
+                                                      <ImageViewButton fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/Rapport.png" />
+                                                         </image>
+                                                      </ImageViewButton>
+                                                   </graphic>
+                                                   <font>
+                                                      <Font name="Montserrat Regular" size="15.0" />
+                                                   </font>
+                                                </ToggleButton>
+                                             </graphic>
+                                          </JFXToggleNode>
+                                          <JFXToggleNode contentDisplay="CENTER" layoutX="10.0" layoutY="103.0" prefHeight="46.0" prefWidth="256.0" textFill="WHITE">
+                                             <graphic>
+                                                <ToggleButton alignment="CENTER_LEFT" mnemonicParsing="false" prefHeight="60.0" prefWidth="240.0" selected="true" style="-fx-background-color: 0000;" text="Configuration" textFill="WHITE" toggleGroup="$btnLateral">
+                                                   <graphic>
+                                                      <ImageViewButton fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/Config.png" />
+                                                         </image>
+                                                      </ImageViewButton>
+                                                   </graphic>
+                                                   <font>
+                                                      <Font name="Montserrat Regular" size="15.0" />
+                                                   </font>
+                                                </ToggleButton>
+                                             </graphic>
+                                          </JFXToggleNode>
+                                       </children>
+                                    </FlowPane>
+                                    <FlowPane alignment="CENTER_LEFT" prefHeight="146.0" prefWidth="256.0">
+                                       <children>
+                                          <JFXToggleNode contentDisplay="CENTER" prefHeight="46.0" prefWidth="256.0" textFill="WHITE">
+                                             <graphic>
+                                                <ToggleButton alignment="CENTER_LEFT" mnemonicParsing="false" prefHeight="60.0" prefWidth="240.0" selected="true" style="-fx-background-color: 0000;" text="Gestion Clientel" textFill="WHITE" toggleGroup="$btnLateral">
+                                                   <graphic>
+                                                      <ImageViewButton fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/user.png" />
+                                                         </image>
+                                                      </ImageViewButton>
+                                                   </graphic>
+                                                   <font>
+                                                      <Font name="Montserrat Regular" size="15.0" />
+                                                   </font>
+                                                </ToggleButton>
+                                             </graphic>
+                                          </JFXToggleNode>
+                                          <JFXToggleNode contentDisplay="CENTER" prefHeight="46.0" prefWidth="256.0" textFill="WHITE">
+                                             <graphic>
+                                                <ToggleButton alignment="CENTER_LEFT" mnemonicParsing="false" prefHeight="60.0" prefWidth="240.0" selected="true" style="-fx-background-color: 0000;" text="Notifications" textFill="WHITE" toggleGroup="$btnLateral">
+                                                   <graphic>
+                                                      <ImageViewButton fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/Vector_1.png" />
+                                                         </image>
+                                                      </ImageViewButton>
+                                                   </graphic>
+                                                   <font>
+                                                      <Font name="Montserrat Regular" size="14.0" />
+                                                   </font>
+                                                </ToggleButton>
+                                             </graphic>
+                                          </JFXToggleNode>
+                                          <JFXToggleNode contentDisplay="CENTER" prefHeight="46.0" prefWidth="256.0" textFill="WHITE">
+                                             <graphic>
+                                                <ToggleButton alignment="CENTER_LEFT" mnemonicParsing="false" prefHeight="60.0" prefWidth="240.0" selected="true" style="-fx-background-color: 0000;" text="Chat whit partenaires" textFill="WHITE" toggleGroup="$btnLateral">
+                                                   <graphic>
+                                                      <ImageViewButton fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/covid-19.png" />
+                                                         </image>
+                                                      </ImageViewButton>
+                                                   </graphic>
+                                                   <font>
+                                                      <Font name="Montserrat Regular" size="15.0" />
+                                                   </font>
+                                                </ToggleButton>
+                                             </graphic>
+                                          </JFXToggleNode>
+                                       </children>
+                                    </FlowPane>
+                                    <FlowPane alignment="CENTER_LEFT" prefHeight="159.0" prefWidth="256.0">
+                                       <children>
+                                          <JFXToggleNode contentDisplay="CENTER" prefHeight="46.0" prefWidth="256.0" textFill="WHITE">
+                                             <graphic>
+                                                <ToggleButton alignment="CENTER_LEFT" mnemonicParsing="false" prefHeight="60.0" prefWidth="240.0" selected="true" style="-fx-background-color: 0000;" text="Paramettre de l'application" textFill="WHITE" toggleGroup="$btnLateral">
+                                                   <graphic>
+                                                      <ImageViewButton fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/Vector_1.png" />
+                                                         </image>
+                                                      </ImageViewButton>
+                                                   </graphic>
+                                                   <font>
+                                                      <Font name="Montserrat Regular" size="14.0" />
+                                                   </font>
+                                                </ToggleButton>
+                                             </graphic>
+                                          </JFXToggleNode>
+                                          <JFXToggleNode contentDisplay="CENTER" prefHeight="46.0" prefWidth="256.0" textFill="WHITE">
+                                             <graphic>
+                                                <ToggleButton alignment="CENTER_LEFT" mnemonicParsing="false" prefHeight="60.0" prefWidth="240.0" selected="true" style="-fx-background-color: 0000;" text="Covid-19" textFill="WHITE">
+                                                   <graphic>
+                                                      <ImageViewButton fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/covid-19.png" />
+                                                         </image>
+                                                      </ImageViewButton>
+                                                   </graphic>
+                                                   <font>
+                                                      <Font name="Montserrat Regular" size="15.0" />
+                                                   </font>
+                                                </ToggleButton>
+                                             </graphic>
+                                          </JFXToggleNode>
+                                          <JFXToggleNode contentDisplay="CENTER" prefHeight="46.0" prefWidth="256.0" textFill="WHITE">
+                                             <graphic>
+                                                <ToggleButton alignment="CENTER_LEFT" mnemonicParsing="false" prefHeight="60.0" prefWidth="240.0" selected="true" style="-fx-background-color: 0000;" text="Aide Technique" textFill="WHITE" toggleGroup="$btnLateral">
+                                                   <graphic>
+                                                      <ImageViewButton fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/help%20Tech.png" />
+                                                         </image>
+                                                      </ImageViewButton>
+                                                   </graphic>
+                                                   <font>
+                                                      <Font name="Montserrat Regular" size="15.0" />
+                                                   </font>
+                                                </ToggleButton>
+                                             </graphic>
+                                          </JFXToggleNode>
+                                       </children>
+                                    </FlowPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </FlowPane>
+                     </children></VBox>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="697.0" prefWidth="1024.0" style="-fx-background-color: rgba(237, 241, 245, 1);" BorderPane.alignment="CENTER">
+                     <children>
+                        <MFXRectangleToggleNode layoutX="805.0" layoutY="44.0" prefHeight="43.0" prefWidth="201.0">
+                           <graphic>
+                              <JFXComboBox prefHeight="26.0" prefWidth="162.0" promptText="Télécharger le Rapport" unFocusColor="#4d4d4d00" />
+                           </graphic>
+                        </MFXRectangleToggleNode>
+                        <Label layoutX="54.0" layoutY="41.0" prefHeight="32.0" prefWidth="149.0" text="Dashboard">
+                           <font>
+                              <Font name="Montserrat Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="54.0" layoutY="68.0" prefHeight="32.0" prefWidth="312.0" text="Une vue rapide des donnés sur l'inventaire.">
+                           <font>
+                              <Font name="Montserrat Regular" size="14.0" />
+                           </font>
+                        </Label>
+                        <Group layoutX="53.0" layoutY="145.0">
+                           <children>
+                              <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="152.0" stroke="#01a768" strokeType="INSIDE" width="212.0" />
+                              <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="127.0" stroke="#01a768" strokeType="INSIDE" width="212.0" />
+                              <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="87.0" layoutY="9.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/health_and_safety_black_24dp%201.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#1d242e" layoutX="37.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="État" textAlignment="CENTER" wrappingWidth="133.19999999999982">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#1d242e" layoutX="30.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statut de l'inventaire" textAlignment="CENTER" wrappingWidth="146.0000183105467">
+                                 <font>
+                                    <Font name="Montserrat Regular" size="14.0" />
+                                 </font>
+                              </Text>
+                              <JFXButton layoutY="125.0" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: rgba(1, 167, 104, 0.30);" text="Voir le Rapport detaillé&gt;&gt;" textAlignment="CENTER" textFill="#1d242e" />
+                           </children>
+                        </Group>
+                        <Group layoutX="299.0" layoutY="145.0">
+                           <children>
+                              <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="152.0" stroke="#fed600" strokeType="INSIDE" width="212.0" />
+                              <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="127.0" stroke="#fed600" strokeType="INSIDE" width="212.0" />
+                              <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="87.0" layoutY="9.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/Vector.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#1d242e" layoutX="37.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 8 55 875" textAlignment="CENTER" wrappingWidth="133.19999999999982">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#1d242e" layoutX="30.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Revenue :" textAlignment="CENTER" wrappingWidth="78.8000671386717">
+                                 <font>
+                                    <Font name="Montserrat Regular" size="14.0" />
+                                 </font>
+                              </Text>
+                              <JFXButton layoutY="125.0" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: rgba(254, 214, 0, 0.3);" text="Voir le Rapport detaillé&gt;&gt;" textAlignment="CENTER" textFill="#1d242e" />
+                              <JFXComboBox labelFloat="true" layoutX="118.0" layoutY="91.0" prefHeight="25.0" prefWidth="79.0" promptText="Jan 2022" />
+                           </children>
+                        </Group>
+                        <Group layoutX="548.0" layoutY="145.0">
+                           <children>
+                              <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="152.0" stroke="#03a9f5" strokeType="INSIDE" width="212.0" />
+                              <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="127.0" stroke="#03a9f5" strokeType="INSIDE" width="212.0" />
+                              <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="87.0" layoutY="9.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/medical_services_black_24dp%202.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#1d242e" layoutX="37.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="298" textAlignment="CENTER" wrappingWidth="133.19999999999982">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#1d242e" layoutX="5.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Médicaments disponibles" textAlignment="CENTER" wrappingWidth="199.3333923339842">
+                                 <font>
+                                    <Font name="Montserrat Regular" size="14.0" />
+                                 </font>
+                              </Text>
+                              <JFXButton layoutY="125.0" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: rgba(3, 169, 245, 0.3);" text="Voir le Rapport detaillé&gt;&gt;" textAlignment="CENTER" textFill="#1d242e" />
+                           </children>
+                        </Group>
+                        <Group layoutX="793.0" layoutY="145.0">
+                           <children>
+                              <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="152.0" stroke="#f0483e" strokeType="INSIDE" width="212.0" />
+                              <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="127.0" stroke="#f0483e" strokeType="INSIDE" width="212.0" />
+                              <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="87.0" layoutY="9.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/Figma/Dashboard%20-%20Pharmacy%20Management%20(Community)/Vector-2.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#1d242e" layoutX="37.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01" textAlignment="CENTER" wrappingWidth="133.19999999999982">
+                                 <font>
+                                    <Font name="Montserrat Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#1d242e" layoutX="16.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rupture Medicament " textAlignment="CENTER" wrappingWidth="174.8000671386717">
+                                 <font>
+                                    <Font name="Montserrat Regular" size="14.0" />
+                                 </font>
+                              </Text>
+                              <JFXButton layoutY="125.0" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: rgba(240, 72, 62, 0.3);" text="Résoudre maintenant &gt;&gt;" textAlignment="CENTER" textFill="#1d242e" />
+                           </children>
+                        </Group>
+                        <MFXTreeView layoutY="418.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="392.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <content>
+                              <AnchorPane prefHeight="368.0" prefWidth="1020.0">
+                                 <children>
+                                    <Group layoutX="18.0" layoutY="-4.0">
+                                       <children>
+                                          <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="140.0" layoutX="34.0" layoutY="31.0" stroke="#1d242e4d" strokeType="INSIDE" width="456.0" />
+                                          <Separator layoutX="35.0" layoutY="81.0" prefHeight="4.0" prefWidth="456.0" />
+                                          <Label layoutX="67.0" layoutY="50.0" prefHeight="25.0" prefWidth="77.0" text="Inventaire" textFill="#1d242e">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Text layoutX="67.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="298" wrappingWidth="130.54001998901367">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="67.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Totale médicament" wrappingWidth="179.60667037963867">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="275.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24" wrappingWidth="130.54001998901367">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="275.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groupes de médicaments" wrappingWidth="207.34000778198242">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Hyperlink layoutX="324.0" layoutY="51.0" prefHeight="23.0" prefWidth="144.0" text="Voir la configuration &gt;&gt;" />
+                                       </children>
+                                    </Group>
+                                    <Group layoutX="18.0" layoutY="164.0">
+                                       <children>
+                                          <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="140.0" layoutX="34.0" layoutY="31.0" stroke="#1d242e4d" strokeType="INSIDE" width="456.0" />
+                                          <Separator layoutX="35.0" layoutY="81.0" prefHeight="4.0" prefWidth="456.0" />
+                                          <Label layoutX="67.0" layoutY="50.0" prefHeight="25.0" prefWidth="77.0" text="Inventaire" textFill="#1d242e">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Text layoutX="67.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="298" wrappingWidth="130.54001998901367">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="67.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Totale médicament" wrappingWidth="179.60667037963867">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="275.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24" wrappingWidth="130.54001998901367">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="275.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groupes de médicaments" wrappingWidth="207.34000778198242">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Hyperlink layoutX="324.0" layoutY="51.0" prefHeight="23.0" prefWidth="144.0" text="Voir la configuration &gt;&gt;" />
+                                       </children>
+                                    </Group>
+                                    <Group layoutX="516.0" layoutY="-4.0">
+                                       <children>
+                                          <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="140.0" layoutX="34.0" layoutY="31.0" stroke="#1d242e4d" strokeType="INSIDE" width="456.0" />
+                                          <Separator layoutX="35.0" layoutY="81.0" prefHeight="4.0" prefWidth="456.0" />
+                                          <Label layoutX="67.0" layoutY="50.0" prefHeight="25.0" prefWidth="77.0" text="Inventaire" textFill="#1d242e">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Text layoutX="67.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="298" wrappingWidth="130.54001998901367">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="67.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Totale médicament" wrappingWidth="179.60667037963867">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="275.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24" wrappingWidth="130.54001998901367">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="275.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groupes de médicaments" wrappingWidth="207.34000778198242">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Hyperlink layoutX="324.0" layoutY="51.0" prefHeight="23.0" prefWidth="144.0" text="Voir la configuration &gt;&gt;" />
+                                       </children>
+                                    </Group>
+                                    <Group layoutX="517.0" layoutY="164.0">
+                                       <children>
+                                          <Rectangle accessibleRole="TOGGLE_BUTTON" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="140.0" layoutX="34.0" layoutY="31.0" stroke="#1d242e4d" strokeType="INSIDE" width="456.0" />
+                                          <Separator layoutX="35.0" layoutY="81.0" prefHeight="4.0" prefWidth="456.0" />
+                                          <Label layoutX="67.0" layoutY="50.0" prefHeight="25.0" prefWidth="77.0" text="Inventaire" textFill="#1d242e">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Text layoutX="67.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="298" wrappingWidth="130.54001998901367">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="67.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Totale médicament" wrappingWidth="179.60667037963867">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="275.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24" wrappingWidth="130.54001998901367">
+                                             <font>
+                                                <Font name="Montserrat Bold" size="20.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="275.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groupes de médicaments" wrappingWidth="207.34000778198242">
+                                             <font>
+                                                <Font name="Montserrat Regular" size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Hyperlink layoutX="324.0" layoutY="51.0" prefHeight="23.0" prefWidth="144.0" text="Voir la configuration &gt;&gt;" />
+                                       </children>
+                                    </Group>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </MFXTreeView>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+            <TextFlow layoutX="1052.0" layoutY="13.0" prefHeight="55.0" prefWidth="177.0" style="-fx-background-color: Gray;" textAlignment="CENTER">
+               <children>
+                  <SimpleDateControl alignment="CENTER" prefHeight="54.0" prefWidth="162.0" />
+               </children>
+            </TextFlow>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
